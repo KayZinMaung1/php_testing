@@ -1,0 +1,17 @@
+{
+    "name": "user/project",
+    "authors": [
+        {
+            "name": "KayZinMaung",
+            "email": "kayzinmaung1@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4": {
+            "Libs\\": "_classes/Libs/",
+            "Helpers\\": "_classes/Helpers/"
+        }
+    }
+
+}
