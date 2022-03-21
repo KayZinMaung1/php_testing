@@ -26,8 +26,8 @@ class UsersTable{
 
     public function getAll(){
         $query = "SELECT users.*,roles.name AS role,roles.value FROM users LEFT JOIN roles ON users.role_id=roles.id";
-        $statement = $this->db->query(query);
-        return $statement.fetchAll();
+        $statement = $this->db->query($query);
+        return $statement->fetchAll();
     }
 
     public function findByEmailAndPassword($email,$password){
