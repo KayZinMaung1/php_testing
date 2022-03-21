@@ -1,0 +1,16 @@
+{
+    "name": "php/sampleprj",
+    "authors": [
+        {
+            "name": "KayZinMaung1",
+            "email": "kayzinmg363@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Libs\\":"_classes/Libs/",
+            "Helpers\\":"_classes/Helpers/"
+        }
+    }
+}
