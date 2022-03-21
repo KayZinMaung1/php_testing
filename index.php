@@ -20,6 +20,16 @@
                 Incorrect Email or Password
             </div>
         <?php endif ?>
+        <?php if (isset($_GET['registered'])): ?>
+            <div class="alert alert-success">
+                Account created.Please Login.
+            </div>
+        <?php endif ?>
+        <?php if (isset($_GET['suspended'])): ?>
+            <div class="alert alert-danger">
+                Your account is suspended.
+            </div>
+        <?php endif ?>
         <form action="_actions/login.php" method="post">
             <input 
                 type="email" 
